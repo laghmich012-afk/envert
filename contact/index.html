@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Contact — Envert Canada</title>
+<link rel="icon" href="../assets/uploads/2019/12/cropped-Eco_Green_Logo_Envert2-Favicon-32x32.png" sizes="32x32"/>
+<link rel="stylesheet" href="../assets/style.css"/>
+<style>
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:72px;align-items:start}
+.contact-info{display:flex;flex-direction:column;gap:28px}
+.cinfo-item{display:flex;gap:16px;align-items:flex-start}
+.cinfo-icon{width:44px;height:44px;border-radius:50%;background:rgba(30,122,58,.2);border:1px solid var(--border);flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.cinfo-icon svg{width:18px;height:18px;stroke:var(--green3);fill:none}
+.cinfo-label{font-size:.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gray);margin-bottom:4px}
+.cinfo-val{font-size:.92rem;color:var(--white);font-weight:400;line-height:1.6}
+.cinfo-val a{color:var(--green3);transition:color .2s}
+.cinfo-val a:hover{color:#fff}
+.contact-form{background:var(--dark2);border:1px solid var(--border);border-radius:var(--r);padding:44px}
+.contact-form h3{font-family:var(--serif);font-size:1.4rem;color:var(--white);font-weight:700;margin-bottom:6px}
+.contact-form .sub{font-size:.85rem;color:var(--gray);margin-bottom:32px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fg{margin-bottom:18px}
+.fg label{display:block;font-size:.68rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gray);margin-bottom:7px}
+.fg input,.fg select,.fg textarea{
+  width:100%;padding:12px 16px;background:rgba(10,14,11,.6);
+  border:1px solid var(--border);border-radius:var(--r);
+  color:var(--white);font-family:var(--sans);font-size:.9rem;
+  outline:none;transition:.2s;
+}
+.fg input:focus,.fg select,.fg select:focus,.fg textarea:focus{border-color:var(--green3);background:rgba(22,32,25,.8);box-shadow:0 0 0 3px rgba(62,206,105,.08)}
+.fg select option{background:var(--dark2)}
+.fg textarea{min-height:120px;resize:vertical}
+.fg input::placeholder,.fg textarea::placeholder{color:var(--gray)}
+.fsub{
+  width:100%;padding:14px;background:var(--green);color:#fff;
+  border:none;border-radius:var(--r);cursor:pointer;
+  font-family:var(--sans);font-weight:700;font-size:.85rem;
+  letter-spacing:.8px;text-transform:uppercase;transition:.25s;
+}
+.fsub:hover{background:var(--green2);box-shadow:0 6px 24px rgba(30,122,58,.4)}
+.fsub.sent{background:#059669}
+.fnote{font-size:.72rem;color:var(--gray);text-align:center;margin-top:10px}
+.map-placeholder{
+  background:var(--dark2);border:1px solid var(--border);border-radius:var(--r);
+  height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;
+  margin-top:32px;
+}
+.map-placeholder svg{width:36px;height:36px;stroke:var(--green3);fill:none;opacity:.5}
+.map-placeholder p{font-size:.85rem;color:var(--gray);text-align:center}
+.map-placeholder a{font-size:.8rem;color:var(--green3);text-decoration:none}
+.map-placeholder a:hover{color:#fff}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}.frow{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a href="../index.html" class="nav-logo">
+    <div class="nav-logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg></div>
+    <span>Envert <span style="color:var(--green3)">Canada</span></span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="../index.html">Home</a>
+    <a href="../about/index.html">About</a>
+    <a href="../technology/index.html">Technology</a>
+    <a href="../portfolio/index.html">Portfolio</a>
+    <a href="../team/index.html">Team</a>
+    <a href="index.html" class="nav-cta">Contact</a>
+  </div>
+  <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <span class="section-tag page-hero-tag">Get In Touch</span>
+  <h1>Contact <em style="color:var(--green3);font-style:italic">Envert Canada</em></h1>
+  <p>We are here to help and answer any question you might have. We look forward to hearing from you.</p>
+</div>
+
+<section class="section">
+  <div class="contact-grid">
+
+    <!-- Info side -->
+    <div class="fade">
+      <span class="section-tag">Reach Us</span>
+      <h2 class="section-title" style="font-size:1.8rem;margin-bottom:32px">Let's start a <em>conversation</em></h2>
+      <div class="contact-info">
+        <div class="cinfo-item">
+          <div class="cinfo-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <div class="cinfo-label">Address</div>
+            <div class="cinfo-val">Pavillon J.-A. Bombardier, local J-1238<br/>5155, Avenue Decelles<br/>Montreal, QC H3T 2B1, Canada</div>
+          </div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+          <div>
+            <div class="cinfo-label">Email</div>
+            <div class="cinfo-val"><a href="mailto:contact@envert.ca">contact@envert.ca</a></div>
+          </div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.22 2.18 2 2 0 012.22 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.12 6.12l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div>
+            <div class="cinfo-label">Phone</div>
+            <div class="cinfo-val">
+              <a href="tel:+14503741402">+1 450 374 1402</a><br/>
+              <a href="tel:+15143777787">+1 514 377 7787</a><br/>
+              <a href="tel:+491738484762">+49 173 848 4762</a> <span style="font-size:.75rem;color:var(--gray)">(DE)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <p>Pavillon J.-A. Bombardier<br/>Université de Montréal, QC</p>
+        <a href="https://maps.google.com/?q=5155+Avenue+Decelles+Montreal" target="_blank" rel="noopener">Open in Google Maps →</a>
+      </div>
+    </div>
+
+    <!-- Form side -->
+    <div class="contact-form fade fd1">
+      <h3>Send us a Message</h3>
+      <p class="sub">Fill out the form and we will get back to you within 1–2 business days.</p>
+      <div class="frow">
+        <div class="fg"><label>First Name *</label><input type="text" placeholder="Jean"/></div>
+        <div class="fg"><label>Last Name *</label><input type="text" placeholder="Dupont"/></div>
+      </div>
+      <div class="frow">
+        <div class="fg"><label>Email *</label><input type="email" placeholder="you@company.com"/></div>
+        <div class="fg"><label>Phone</label><input type="tel" placeholder="+1 000 000 0000"/></div>
+      </div>
+      <div class="fg">
+        <label>Organization</label>
+        <input type="text" placeholder="Company or Institution"/>
+      </div>
+      <div class="fg">
+        <label>Subject *</label>
+        <select>
+          <option value="">Select a topic…</option>
+          <option>CCC Technology Inquiry</option>
+          <option>Investment &amp; Partnership</option>
+          <option>Request a Quote</option>
+          <option>Media &amp; Press</option>
+          <option>General Question</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label>Message *</label>
+        <textarea placeholder="Describe your project, your needs, or your question…"></textarea>
+      </div>
+      <button class="fsub" id="submitBtn" onclick="handleSubmit(event)">Send Message →</button>
+      <p class="fnote">We respond within 1–2 business days. Your information is kept confidential.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="nav-logo" style="margin-bottom:0"><div class="nav-logo-mark"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg></div><span style="font-family:var(--serif);font-weight:800;color:var(--white)">Envert Canada</span></div><p>Energizing waste, powering a cleaner planet.</p></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="../about/index.html">About</a></li><li><a href="../technology/index.html">Technology</a></li><li><a href="../portfolio/index.html">Portfolio</a></li><li><a href="../team/index.html">Team</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@envert.ca">contact@envert.ca</a></li><li><a href="tel:+14503741402">+1 450 374 1402</a></li><li><a href="tel:+15143777787">+1 514 377 7787</a></li></ul></div>
+    <div class="footer-col"><h4>Address</h4><ul><li><a href="#">Pavillon J.-A. Bombardier</a></li><li><a href="#">5155 Ave Decelles</a></li><li><a href="#">Montréal, QC H3T 2B1</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2024 Envert, Inc. — All Rights Reserved</span></div>
+</footer>
+<script src="../assets/main.js"></script>
+<script>
+function handleSubmit(e) {
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = '✓ Message sent!';
+  btn.classList.add('sent');
+  btn.disabled = true;
+  setTimeout(() => { btn.textContent = 'Send Message →'; btn.classList.remove('sent'); btn.disabled = false; }, 4000);
+}
+</script>
+</body>
+</html>

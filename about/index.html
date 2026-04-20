@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>About — Envert Canada</title>
+<link rel="icon" href="../assets/uploads/2019/12/cropped-Eco_Green_Logo_Envert2-Favicon-32x32.png" sizes="32x32"/>
+<link rel="stylesheet" href="../assets/style.css"/>
+<style>
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-top:64px}
+.about-img img{width:100%;border-radius:var(--r);filter:brightness(.85) contrast(1.1)}
+.range-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:24px}
+.range-list li{display:flex;align-items:flex-start;gap:12px;font-size:.9rem;color:var(--gray2)}
+.range-list li::before{content:'→';color:var(--green3);flex-shrink:0;margin-top:1px}
+.who-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:48px}
+.who-card{background:var(--dark2);border:1px solid var(--border);border-radius:var(--r);padding:32px;transition:.3s}
+.who-card:hover{border-color:rgba(62,206,105,.4)}
+.who-card h3{font-size:1.05rem;color:var(--green3);margin-bottom:10px}
+.who-card p{font-size:.85rem;color:var(--gray);line-height:1.7}
+.benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.benefit{background:var(--dark2);border:1px solid var(--border);border-radius:var(--r);padding:24px;display:flex;align-items:center;gap:14px}
+.benefit-dot{width:10px;height:10px;border-radius:50%;background:var(--green3);flex-shrink:0}
+.benefit p{font-size:.88rem;color:var(--gray2);font-weight:500;margin:0}
+@media(max-width:900px){.about-grid,.who-grid{grid-template-columns:1fr}.benefits-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.benefits-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a href="../index.html" class="nav-logo">
+    <div class="nav-logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg></div>
+    <span>Envert <span style="color:var(--green3)">Canada</span></span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="../index.html">Home</a>
+    <a href="index.html">About</a>
+    <a href="../technology/index.html">Technology</a>
+    <a href="../portfolio/index.html">Portfolio</a>
+    <a href="../team/index.html">Team</a>
+    <a href="../contact/index.html" class="nav-cta">Contact</a>
+  </div>
+  <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <span class="section-tag page-hero-tag">Who We Are</span>
+  <h1>About <em style="color:var(--green3);font-style:italic">Envert Canada</em></h1>
+  <p>We generate clean energy from several types of waste — pioneering Cold Catalytic Conversion in North America.</p>
+</div>
+
+<section class="section">
+  <div class="about-grid">
+    <div class="about-img fade">
+      <img src="../assets/uploads/2019/12/tree-hugging-love-nature-1024x726.jpg" alt="Sustainable mission"/>
+    </div>
+    <div class="fade fd1">
+      <span class="section-tag">Our Mission</span>
+      <h2 class="section-title">We promote a unique,<br/><em>cost-effective technology</em></h2>
+      <div class="divider"></div>
+      <p class="section-lead">We promote a unique and very cost-effective industrial process based on the Cold Catalytic Conversion technique, that allows the production of light synthetic fuel oil with a high calorific value and very low carbon footprint. The final product has several uses and is highly valued by consumers.</p>
+      <div style="margin-top:28px;display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:8px;height:8px;border-radius:50%;background:var(--green3);flex-shrink:0;margin-top:7px"></div><p><strong style="color:var(--green3)">Mission:</strong> Energizing waste, Powering a cleaner industry.</p></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:8px;height:8px;border-radius:50%;background:var(--green3);flex-shrink:0;margin-top:7px"></div><p><strong style="color:var(--green3)">Value:</strong> Commitment to sustainability and fairness.</p></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><div style="width:8px;height:8px;border-radius:50%;background:var(--green3);flex-shrink:0;margin-top:7px"></div><p><strong style="color:var(--green3)">Vision:</strong> Protecting Earth, empowering People.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark2);padding-top:80px;padding-bottom:80px">
+  <span class="section-tag fade">Range of Waste Recycling</span>
+  <h2 class="section-title fade">We can process <em>all these waste types</em></h2>
+  <ul class="range-list" style="margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:12px 40px">
+    <li class="fade">Refused Derived Fuel (RDF)</li>
+    <li class="fade fd1">All types of plastic, except PVC</li>
+    <li class="fade">Rubber and used tires</li>
+    <li class="fade fd1">Wood residues</li>
+    <li class="fade">Industrial waste and household waste</li>
+    <li class="fade fd1">Lightweight and polymeric packaging</li>
+    <li class="fade">Textile waste</li>
+    <li class="fade fd1">Mixtures of all the above waste types</li>
+  </ul>
+</section>
+
+<section class="section">
+  <span class="section-tag fade">Our Structure</span>
+  <h2 class="section-title fade">Who We Are &amp; <em>What We Do</em></h2>
+  <div class="who-grid">
+    <div class="who-card fade">
+      <h3>EnVert — The Holding</h3>
+      <p>EnVert is a holding company owned by Thermo Transcal Inc. and BIOCON GmbH / ESA AG — combining world-class Canadian thermal engineering with proven German waste-to-fuel conversion expertise.</p>
+    </div>
+    <div class="who-card fade fd1">
+      <h3>Thermo Transcal Inc.</h3>
+      <p>Specialized in thermal engineering. Developed expertise in the design and manufacture of innovative heat exchangers — reliable and very safe — with a portfolio of more than 2,000 installations worldwide. Controlling shareholder of the holding.</p>
+    </div>
+    <div class="who-card fade fd2">
+      <h3>BIOCON GmbH &amp; ESA AG</h3>
+      <p>German companies specializing in the development and manufacture of equipment that recovers energy from waste. Three turnkey plants operating in Hannover and München (Germany), and Albacete (Spain).</p>
+    </div>
+    <div class="who-card fade fd3">
+      <h3>The Technology</h3>
+      <p>Based on Cold Catalytic Conversion — a successful industrial scale-up converting several types of waste into fuels. Our solution is the first implemented in North America, providing reliable, high-profitability, and minimum-maintenance energy production.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark2)">
+  <span class="section-tag fade">Our Advantages</span>
+  <h2 class="section-title fade">Economic &amp; environmental <em>benefits</em></h2>
+  <div class="benefits-grid">
+    <div class="benefit fade"><div class="benefit-dot"></div><p>Reliability</p></div>
+    <div class="benefit fade fd1"><div class="benefit-dot"></div><p>Safety</p></div>
+    <div class="benefit fade fd2"><div class="benefit-dot"></div><p>High Profitability</p></div>
+    <div class="benefit fade"><div class="benefit-dot"></div><p>Minimum Maintenance</p></div>
+    <div class="benefit fade fd1"><div class="benefit-dot"></div><p>Neutral Ecological Impact</p></div>
+    <div class="benefit fade fd2"><div class="benefit-dot"></div><p>First in North America</p></div>
+  </div>
+</section>
+
+<div style="background:var(--green);padding:70px 6%;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,#185e2c,#1e7a3a)"></div>
+  <div style="position:relative;z-index:1">
+    <h2 style="color:#fff;font-size:clamp(1.4rem,2.5vw,2rem)">We are here to help you</h2>
+    <p style="color:rgba(242,247,243,.75);margin-top:6px">contact@envert.ca · +1 450 374 1402 · +1 514 377 7787</p>
+  </div>
+  <a href="../contact/index.html" class="btn btn-acid" style="position:relative;z-index:1">Contact Us</a>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:0"><div class="nav-logo-mark"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg></div><span style="font-family:var(--serif);font-weight:800;color:var(--white)">Envert Canada</span></div>
+      <p>Energizing waste, powering a cleaner planet.</p>
+    </div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="index.html">About</a></li><li><a href="../technology/index.html">Technology</a></li><li><a href="../portfolio/index.html">Portfolio</a></li><li><a href="../team/index.html">Team</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@envert.ca">contact@envert.ca</a></li><li><a href="tel:+14503741402">+1 450 374 1402</a></li><li><a href="tel:+15143777787">+1 514 377 7787</a></li></ul></div>
+    <div class="footer-col"><h4>Address</h4><ul><li><a href="#">Pavillon J.-A. Bombardier</a></li><li><a href="#">5155 Ave Decelles</a></li><li><a href="#">Montréal, QC H3T 2B1</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2024 Envert, Inc. — All Rights Reserved</span><div class="footer-badges"><span class="footer-badge">CCC Technology</span><span class="footer-badge">North America #1</span></div></div>
+</footer>
+<script src="../assets/main.js"></script>
+</body>
+</html>

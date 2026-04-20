@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Technology — Envert Canada</title>
+<link rel="icon" href="../assets/uploads/2019/12/cropped-Eco_Green_Logo_Envert2-Favicon-32x32.png" sizes="32x32"/>
+<link rel="stylesheet" href="../assets/style.css"/>
+<style>
+.tech-intro{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;margin-top:60px}
+.tech-img img{width:100%;border-radius:var(--r);filter:brightness(.8) contrast(1.1)}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:52px;position:relative}
+.process-steps::before{content:'';position:absolute;top:24px;left:calc(12.5% + 24px);right:calc(12.5% + 24px);height:1px;background:rgba(62,206,105,.2)}
+.pstep{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 16px;position:relative;z-index:1}
+.pdot{width:48px;height:48px;border-radius:50%;background:rgba(30,122,58,.2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:18px;flex-shrink:0;transition:.3s}
+.pdot svg{width:20px;height:20px;stroke:var(--green3);fill:none}
+.pstep:hover .pdot{background:var(--green);border-color:var(--green3)}
+.pstep h4{font-family:var(--serif);font-size:.95rem;color:var(--white);margin-bottom:8px}
+.pstep p{font-size:.78rem;color:var(--gray);line-height:1.6}
+.specs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.spec-card{background:var(--dark2);border:1px solid var(--border);border-radius:var(--r);padding:28px;position:relative;overflow:hidden;transition:.3s}
+.spec-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--green),var(--green3));transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.spec-card:hover{border-color:rgba(62,206,105,.4);transform:translateY(-4px)}
+.spec-card:hover::before{transform:scaleX(1)}
+.spec-num{font-family:var(--serif);font-size:2.6rem;font-weight:800;color:rgba(62,206,105,.15);line-height:1;margin-bottom:6px}
+.spec-card h3{font-size:1rem;color:var(--white);margin-bottom:10px}
+.spec-card p{font-size:.83rem;color:var(--gray);line-height:1.65}
+.waste-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:36px}
+.waste-item{background:var(--dark2);border:1px solid var(--border);border-radius:var(--r);padding:20px 16px;text-align:center;transition:.3s}
+.waste-item:hover{border-color:rgba(62,206,105,.4);background:rgba(22,32,25,.8)}
+.waste-item p{font-size:.82rem;color:var(--gray2);margin:0;font-weight:400}
+.fuel-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:48px;align-items:center}
+.fuel-img img{width:100%;border-radius:var(--r);filter:brightness(.85)}
+.fuel-types{display:flex;flex-direction:column;gap:12px}
+.fuel-type{display:flex;align-items:center;gap:14px;background:var(--dark2);border:1px solid var(--border);border-radius:var(--r);padding:16px 20px}
+.fuel-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.fuel-type h4{font-size:.92rem;color:var(--white);margin-bottom:2px}
+.fuel-type p{font-size:.78rem;color:var(--gray);margin:0}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.why-item{display:flex;gap:12px;align-items:flex-start;background:var(--dark2);border:1px solid var(--border);border-radius:var(--r);padding:20px}
+.why-check{color:var(--green3);font-size:1.1rem;flex-shrink:0;margin-top:1px}
+.why-item p{font-size:.85rem;color:var(--gray2);margin:0;font-weight:400}
+@media(max-width:900px){.tech-intro,.fuel-grid{grid-template-columns:1fr}.process-steps{grid-template-columns:1fr 1fr;row-gap:32px}.process-steps::before{display:none}.specs-grid{grid-template-columns:1fr 1fr}.waste-grid{grid-template-columns:1fr 1fr}.why-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.specs-grid,.waste-grid,.why-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a href="../index.html" class="nav-logo">
+    <div class="nav-logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg></div>
+    <span>Envert <span style="color:var(--green3)">Canada</span></span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="../index.html">Home</a>
+    <a href="../about/index.html">About</a>
+    <a href="index.html">Technology</a>
+    <a href="../portfolio/index.html">Portfolio</a>
+    <a href="../team/index.html">Team</a>
+    <a href="../contact/index.html" class="nav-cta">Contact</a>
+  </div>
+  <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <span class="section-tag page-hero-tag">Cold Catalytic Conversion</span>
+  <h1>Our <em style="color:var(--green3);font-style:italic">Technology</em></h1>
+  <p>A patented, closed-loop industrial process converting waste into clean fuel — with no greenhouse gas emissions and over 70% conversion efficiency.</p>
+</div>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="tech-intro">
+    <div class="fade">
+      <span class="section-tag">The CCC Reactor</span>
+      <h2 class="section-title">There's nothing <em>left behind</em></h2>
+      <div class="divider"></div>
+      <p class="section-lead">Plastic waste is a massive global problem. Burning or landfilling are not real alternatives. Material recycling fails when it comes to mixed and composite materials. Envert offers an environmentally friendly solution in partnership with Biocon Energy GmbH — a reliable and efficient technology based on the Cold Catalytic Conversion technique.</p>
+      <p style="margin-top:16px;color:var(--gray2);font-size:.95rem;font-weight:300;line-height:1.75">The CCC reactor is modular, handles between 10 and 20 tonnes of waste per day, and runs 24 hours a day. Unlike all other recycling technologies, a single CCC reactor handles different types of waste without important changes. The reactor operates at approximately 1 bar — no pressure danger, no emissions, fully closed system.</p>
+    </div>
+    <div class="tech-img fade fd1">
+      <img src="../assets/uploads/2019/12/CCC-FFF.png" alt="CCC Technology diagram"/>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" style="background:var(--dark2)">
+  <div style="text-align:center">
+    <span class="section-tag fade">The Process</span>
+    <h2 class="section-title fade">How the CCC reactor <em>works</em></h2>
+  </div>
+  <div class="process-steps">
+    <div class="pstep fade">
+      <div class="pdot"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/></svg></div>
+      <h4>Waste Input</h4>
+      <p>Material fed to an extruder — grain size 3–15mm, dry. Plastics, rubber, RDF, mixed waste.</p>
+    </div>
+    <div class="pstep fade fd1">
+      <div class="pdot"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+      <h4>CCC Conversion</h4>
+      <p>Cold catalytic conversion at low temperature (~1 bar). Continuous 24h operation. Oil vapors evaporate at the outlet.</p>
+    </div>
+    <div class="pstep fade fd2">
+      <div class="pdot"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+      <h4>Condensation</h4>
+      <p>Resulting substances condensed, purified, and collected in separate tanks by hydrocarbon chain.</p>
+    </div>
+    <div class="pstep fade fd3">
+      <div class="pdot"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+      <h4>Energy Output</h4>
+      <p>Fuel, electricity (via CHP), and heat — all sold to industry or the power grid.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SPECS -->
+<section class="section">
+  <span class="section-tag fade">Technical Advantages</span>
+  <h2 class="section-title fade">Six reasons to choose <em>CCC technology</em></h2>
+  <div class="specs-grid">
+    <div class="spec-card fade"><div class="spec-num">01</div><h3>Efficiency</h3><p>Consumes little energy and offers a very high conversion rate. On average, conversion of waste to fuels exceeds 70%. 1,000 kg of waste → up to 850 litres of fuel.</p></div>
+    <div class="spec-card fade fd1"><div class="spec-num">02</div><h3>Flexibility</h3><p>Modular system — a single installation processes several types of waste, recyclable and non-recyclable. The reactor adjusts easily to the quantity of raw materials available.</p></div>
+    <div class="spec-card fade fd2"><div class="spec-num">03</div><h3>Compactness</h3><p>Compact and removable — transportable from site to site in a 40-ft container. Upgrades can be added in parallel or superimposed modules.</p></div>
+    <div class="spec-card fade fd3"><div class="spec-num">04</div><h3>Reliability</h3><p>Monitoring controlled via a remote platform by internet from any device — computer, tablet, or smartphone. Sensors for predictive maintenance minimize downtime.</p></div>
+    <div class="spec-card fade fd1"><div class="spec-num">05</div><h3>Environment</h3><p>Based on a technology with little risk of leakage, pollution, or explosion. A closed reactor operating at low temperatures — does not emit greenhouse gases.</p></div>
+    <div class="spec-card fade fd2"><div class="spec-num">06</div><h3>Durability</h3><p>Long life cycle of 20 to 25 years. Requires very little maintenance — only twice a year — making it one of the lowest total-cost solutions available.</p></div>
+  </div>
+</section>
+
+<!-- WASTE TYPES -->
+<section class="section" style="background:var(--dark2)">
+  <span class="section-tag fade">Input Materials</span>
+  <h2 class="section-title fade">Waste types <em>the reactor can process</em></h2>
+  <div class="waste-grid">
+    <div class="waste-item fade"><p>Used Tires &amp; Rubber</p></div>
+    <div class="waste-item fade fd1"><p>All Plastics (excl. PVC)</p></div>
+    <div class="waste-item fade fd2"><p>Paper &amp; Cardboard</p></div>
+    <div class="waste-item fade fd3"><p>Wood Residues</p></div>
+    <div class="waste-item fade"><p>Textile Waste</p></div>
+    <div class="waste-item fade fd1"><p>Organic Waste</p></div>
+    <div class="waste-item fade fd2"><p>RDF (Pre-treated Waste)</p></div>
+    <div class="waste-item fade fd3"><p>Mixed &amp; Composite Materials</p></div>
+  </div>
+</section>
+
+<!-- FUEL OUTPUT -->
+<section class="section">
+  <span class="section-tag fade">What We Extract</span>
+  <h2 class="section-title fade">Fuel, electricity &amp; <em>heat outputs</em></h2>
+  <div class="fuel-grid">
+    <div class="fuel-img fade">
+      <img src="../assets/uploads/2019/12/FUEL-RATIO-4-1024x520.png" alt="Fuel ratio diagram"/>
+    </div>
+    <div class="fade fd1">
+      <p style="margin-bottom:24px;font-size:.95rem">The light synthetic fuel can be refined to extract multiple grades of fuel, and the process gases are converted to electricity and heat via cogeneration.</p>
+      <div class="fuel-types">
+        <div class="fuel-type"><div class="fuel-dot" style="background:#f59e0b"></div><div><h4>Naphtha</h4><p>Light fraction, petrochemical feedstock</p></div></div>
+        <div class="fuel-type"><div class="fuel-dot" style="background:#ef4444"></div><div><h4>Gasoline</h4><p>Refined for vehicle use</p></div></div>
+        <div class="fuel-type"><div class="fuel-dot" style="background:#3b82f6"></div><div><h4>Kerosene &amp; Diesel</h4><p>Direct industrial fuel replacement</p></div></div>
+        <div class="fuel-type"><div class="fuel-dot" style="background:var(--green3)"></div><div><h4>Electricity &amp; Heat</h4><p>Via cogeneration — injected to grid or sold to industry</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section" style="background:var(--dark2)">
+  <span class="section-tag fade">Why Choose Us?</span>
+  <h2 class="section-title fade">The complete solution for <em>sustainable waste management</em></h2>
+  <div class="why-grid">
+    <div class="why-item fade"><div class="why-check">✓</div><p>Valorisation of all types of waste</p></div>
+    <div class="why-item fade fd1"><div class="why-check">✓</div><p>Clean environment — no water or air pollution</p></div>
+    <div class="why-item fade fd2"><div class="why-check">✓</div><p>Renewable energy production</p></div>
+    <div class="why-item fade"><div class="why-check">✓</div><p>Cogeneration and sale of heat to neighboring plants</p></div>
+    <div class="why-item fade fd1"><div class="why-check">✓</div><p>Maximum processing time: 10 minutes</p></div>
+    <div class="why-item fade fd2"><div class="why-check">✓</div><p>Reduction of the ecological footprint of waste</p></div>
+  </div>
+  <div style="text-align:center;margin-top:48px">
+    <a href="../contact/index.html" class="btn btn-acid fade">Contact Us About This Technology</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="nav-logo" style="margin-bottom:0"><div class="nav-logo-mark"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg></div><span style="font-family:var(--serif);font-weight:800;color:var(--white)">Envert Canada</span></div><p>Energizing waste, powering a cleaner planet.</p></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="../about/index.html">About</a></li><li><a href="index.html">Technology</a></li><li><a href="../portfolio/index.html">Portfolio</a></li><li><a href="../team/index.html">Team</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@envert.ca">contact@envert.ca</a></li><li><a href="tel:+14503741402">+1 450 374 1402</a></li><li><a href="tel:+15143777787">+1 514 377 7787</a></li></ul></div>
+    <div class="footer-col"><h4>Address</h4><ul><li><a href="#">Pavillon J.-A. Bombardier</a></li><li><a href="#">5155 Ave Decelles</a></li><li><a href="#">Montréal, QC H3T 2B1</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2024 Envert, Inc. — All Rights Reserved</span></div>
+</footer>
+<script src="../assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Team — Envert Canada</title>
+<link rel="icon" href="../assets/uploads/2019/12/cropped-Eco_Green_Logo_Envert2-Favicon-32x32.png" sizes="32x32"/>
+<link rel="stylesheet" href="../assets/style.css"/>
+<style>
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:60px}
+.team-card{background:var(--dark2);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:.3s;display:flex;flex-direction:column}
+.team-card:hover{border-color:rgba(62,206,105,.4);transform:translateY(-5px);box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.team-photo{width:100%;height:280px;object-fit:cover;object-position:top;filter:brightness(.85) grayscale(.2)}
+.team-photo-placeholder{width:100%;height:280px;background:linear-gradient(135deg,var(--dark),#1a3d1e);display:flex;align-items:center;justify-content:center}
+.team-photo-placeholder span{font-family:var(--serif);font-size:4rem;font-weight:800;color:rgba(62,206,105,.25)}
+.team-body{padding:32px;flex:1;display:flex;flex-direction:column}
+.team-role{font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green3);margin-bottom:6px}
+.team-name{font-family:var(--serif);font-size:1.5rem;font-weight:800;color:var(--white);margin-bottom:4px}
+.team-title{font-size:.85rem;color:var(--gray);margin-bottom:20px;font-style:italic}
+.team-skills{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:24px;flex:1}
+.team-skills li{font-size:.83rem;color:var(--gray2);display:flex;align-items:flex-start;gap:10px;font-weight:300}
+.team-skills li::before{content:'▸';color:var(--green3);flex-shrink:0;font-size:.7rem;margin-top:2px}
+.team-actions{display:flex;gap:10px;margin-top:auto}
+.team-btn{padding:9px 18px;border-radius:var(--r);font-size:.75rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;transition:.2s;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.team-btn-outline{background:transparent;color:var(--gray);border:1px solid var(--border)}
+.team-btn-outline:hover{border-color:var(--green3);color:var(--green3)}
+.team-btn-green{background:var(--green);color:#fff;border:none}
+.team-btn-green:hover{background:var(--green2)}
+.tagline{background:var(--dark2);border:1px solid var(--border);border-radius:var(--r);padding:32px 40px;text-align:center;margin-bottom:48px}
+.tagline p{font-family:var(--serif);font-size:1.2rem;font-style:italic;color:var(--gray2)}
+.tagline strong{color:var(--green3)}
+@media(max-width:900px){.team-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a href="../index.html" class="nav-logo">
+    <div class="nav-logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg></div>
+    <span>Envert <span style="color:var(--green3)">Canada</span></span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="../index.html">Home</a>
+    <a href="../about/index.html">About</a>
+    <a href="../technology/index.html">Technology</a>
+    <a href="../portfolio/index.html">Portfolio</a>
+    <a href="index.html">Team</a>
+    <a href="../contact/index.html" class="nav-cta">Contact</a>
+  </div>
+  <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <span class="section-tag page-hero-tag">The People Behind Envert</span>
+  <h1>Our <em style="color:var(--green3);font-style:italic">Team</em></h1>
+  <p>At EnVert, we share the vision and values of our community — combining engineering excellence with a passion for sustainable innovation.</p>
+</div>
+
+<section class="section">
+  <div class="tagline fade">
+    <p>"At EnVert, we work as a team and combine our talents to develop an innovative technology that has <strong>solved the problem of recycling waste</strong> in a cost-effective way."</p>
+  </div>
+
+  <div class="team-grid">
+
+    <!-- Tarik -->
+    <div class="team-card fade">
+      <div class="team-photo-placeholder"><span>TL</span></div>
+      <div class="team-body">
+        <div class="team-role">Founder &amp; Executive</div>
+        <div class="team-name">Tarik Laghmich</div>
+        <div class="team-title">CEO — Envert Inc. &amp; Thermo Transcal Inc.</div>
+        <ul class="team-skills">
+          <li>MSc Electrical Engineering &amp; GR Business Management</li>
+          <li>Organisations &amp; Projects Management</li>
+          <li>Thermal engineering and energy efficiency</li>
+          <li>Holds several patents registered in the international PCT system</li>
+          <li>Large experience in entrepreneurship and innovative projects</li>
+          <li>Co-Founder and CEO of Thermo Transcal Inc. — tubular heat exchangers</li>
+        </ul>
+        <div class="team-actions">
+          <a href="mailto:contact@envert.ca" class="team-btn team-btn-outline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+          <a href="../contact/index.html" class="team-btn team-btn-green">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Martin -->
+    <div class="team-card fade fd1">
+      <img class="team-photo" src="../assets/uploads/2024/01/MARTIN-KOTZUR.png" alt="Martin Kotzur"/>
+      <div class="team-body">
+        <div class="team-role">Executive Leadership</div>
+        <div class="team-name">Martin Kotzur</div>
+        <div class="team-title">CEO, Envert — Chairman, ESA AG Supervisory Board</div>
+        <ul class="team-skills">
+          <li>Electrical Engineer</li>
+          <li>Large-scale Projects Management</li>
+          <li>Over 40 years of experience as an Electrical Engineer</li>
+          <li>Thermal engineering and energy efficiency</li>
+          <li>Large experience in entrepreneurship and innovative projects</li>
+        </ul>
+        <div class="team-actions">
+          <a href="mailto:contact@envert.ca" class="team-btn team-btn-outline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+          <a href="../contact/index.html" class="team-btn team-btn-green">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marouan -->
+    <div class="team-card fade fd2">
+      <img class="team-photo" src="../assets/uploads/2013/12/MAROUAN.png" alt="Marouan Seguem"/>
+      <div class="team-body">
+        <div class="team-role">Operations</div>
+        <div class="team-name">Marouan Seguem</div>
+        <div class="team-title">Chief Operating Officer (COO)</div>
+        <ul class="team-skills">
+          <li>Civil Engineering — Polytechnique de Montréal</li>
+          <li>Project Management</li>
+          <li>Thermal engineering and energy efficiency</li>
+          <li>Large experience in entrepreneurship and innovative projects</li>
+          <li>Co-Founder and COO of Thermo Transcal Heat Exchanger</li>
+        </ul>
+        <div class="team-actions">
+          <a href="mailto:contact@envert.ca" class="team-btn team-btn-outline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+          <a href="../contact/index.html" class="team-btn team-btn-green">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wilfried -->
+    <div class="team-card fade fd3">
+      <img class="team-photo" src="../assets/uploads/2019/12/Wilfried-Schraufstetter-CCC-Founder.jpg" alt="Prof. Wilfried Schraufstetter"/>
+      <div class="team-body">
+        <div class="team-role">Inventor &amp; CTO</div>
+        <div class="team-name">Prof. Wilfried Schraufstetter</div>
+        <div class="team-title">Inventor of CCC Technology — CTO, Biocon GmbH</div>
+        <ul class="team-skills">
+          <li>Mechanical Engineer, Master Electrician, technical draftsman, and master steelworker</li>
+          <li>Developing and working on biogas plants since the early 1980s</li>
+          <li>Recovering fuels from plastics since 1995 — with repeated industrial success</li>
+          <li>Developed industrial scale-up for several CCC projects</li>
+          <li>Holds more than 20 patents in industrial process engineering</li>
+        </ul>
+        <div class="team-actions">
+          <a href="mailto:contact@envert.ca" class="team-btn team-btn-outline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+          <a href="../contact/index.html" class="team-btn team-btn-green">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div style="background:var(--green);padding:70px 6%;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,#185e2c,#1e7a3a)"></div>
+  <div style="position:relative;z-index:1">
+    <h2 style="color:#fff;font-size:clamp(1.4rem,2.5vw,2rem)">Want to work with our team?</h2>
+    <p style="color:rgba(242,247,243,.75);margin-top:6px">Book an appointment or send us a message — we'd love to hear about your project.</p>
+  </div>
+  <a href="../contact/index.html" class="btn btn-acid" style="position:relative;z-index:1">Get in Touch</a>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="nav-logo" style="margin-bottom:0"><div class="nav-logo-mark"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg></div><span style="font-family:var(--serif);font-weight:800;color:var(--white)">Envert Canada</span></div><p>Energizing waste, powering a cleaner planet.</p></div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="../about/index.html">About</a></li><li><a href="../technology/index.html">Technology</a></li><li><a href="../portfolio/index.html">Portfolio</a></li><li><a href="index.html">Team</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@envert.ca">contact@envert.ca</a></li><li><a href="tel:+14503741402">+1 450 374 1402</a></li><li><a href="tel:+15143777787">+1 514 377 7787</a></li></ul></div>
+    <div class="footer-col"><h4>Address</h4><ul><li><a href="#">Pavillon J.-A. Bombardier</a></li><li><a href="#">5155 Ave Decelles</a></li><li><a href="#">Montréal, QC H3T 2B1</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2024 Envert, Inc. — All Rights Reserved</span></div>
+</footer>
+<script src="../assets/main.js"></script>
+</body>
+</html>

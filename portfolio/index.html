@@ -2,46 +2,49 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Portfolio — Envert Canada</title>
-<link rel="icon" href="../assets/uploads/2019/12/cropped-Eco_Green_Logo_Envert2-Favicon-32x32.webp" sizes="32x32"/>
+<title>Portfolio — Envert Canada | CCC Plant Projects</title>
+<meta name="description" content="View Envert Canada's portfolio of Cold Catalytic Conversion installations — operating plants in Albacete (Spain) and Hannover (Germany), proving the technology at industrial scale."/>
+<meta property="og:title" content="Portfolio — Envert Canada"/>
+<meta property="og:url" content="https://envert.ca/portfolio/"/>
+<link rel="canonical" href="https://envert.ca/portfolio/"/>
+<link rel="icon" href="../assets/uploads/2019/12/cropped-Eco_Green_Logo_Envert2-Favicon-32x32.png" sizes="32x32"/>
 <link rel="stylesheet" href="../assets/style.css"/>
 <style>
-.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:56px}
-.portfolio-item{position:relative;overflow:hidden;aspect-ratio:4/3;cursor:pointer;background:var(--dark2)}
-.portfolio-item img{width:100%;height:100%;object-fit:cover;filter:brightness(.75) contrast(1.05);transition:transform .55s,filter .3s}
-.portfolio-item:hover img{transform:scale(1.06);filter:brightness(.55) contrast(1.1)}
-.port-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,8,7,.9) 0%,transparent 50%);opacity:.75;transition:opacity .3s}
-.portfolio-item:hover .port-ov{opacity:1}
+.port-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:52px}
+.port-item{position:relative;overflow:hidden;aspect-ratio:4/3;background:var(--dark2)}
+.port-item img{width:100%;height:100%;object-fit:cover;filter:brightness(.78) contrast(1.05);transition:transform .55s,filter .4s;display:block}
+.port-item:hover img{transform:scale(1.06);filter:brightness(.55) contrast(1.1)}
+.port-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,8,7,.92) 0%,transparent 55%);opacity:.78;transition:opacity .3s}
+.port-item:hover .port-ov{opacity:1}
 .port-info{position:absolute;bottom:0;left:0;right:0;padding:20px 22px;z-index:2;transform:translateY(6px);transition:.3s}
-.portfolio-item:hover .port-info{transform:none}
+.port-item:hover .port-info{transform:none}
 .port-tag{font-size:.6rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green3);margin-bottom:4px}
 .port-name{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--white);line-height:1.3}
-.port-loc{font-size:.75rem;color:rgba(242,247,243,.55);margin-top:3px}
-.partners-section{background:var(--dark2)}
-.partner-row{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:52px;margin-top:44px}
-.partner-logo{opacity:.4;filter:grayscale(1);transition:.3s;display:flex;align-items:center;justify-content:center}
-.partner-logo:hover{opacity:.9;filter:grayscale(0)}
-.partner-logo img{max-height:44px;max-width:140px;object-fit:contain}
-.cta-contact{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:60px}
-.cta-left{background:var(--green);padding:52px 48px;position:relative;overflow:hidden}
-.cta-left::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#185e2c,#1e7a3a)}
-.cta-left h3{font-family:var(--serif);font-size:1.6rem;color:#fff;position:relative;z-index:1}
-.cta-left p{color:rgba(242,247,243,.75);margin-top:10px;position:relative;z-index:1}
-.cta-left a{margin-top:24px;position:relative;z-index:1;display:inline-block}
-.cta-right{background:var(--dark2);padding:52px 48px;border:1px solid var(--border)}
-.cta-right h3{font-family:var(--serif);font-size:1.6rem;color:var(--white)}
-.cta-right p{color:var(--gray);margin-top:10px}
-.cta-right a{color:var(--green3);text-decoration:none;font-weight:600;display:block;margin-top:12px}
-.cta-right a:hover{color:#fff}
-@media(max-width:900px){.portfolio-grid{grid-template-columns:1fr 1fr}.cta-contact{grid-template-columns:1fr}}
-@media(max-width:600px){.portfolio-grid{grid-template-columns:1fr}}
+.port-loc{font-size:.75rem;color:rgba(242,247,243,.5);margin-top:3px}
+.partners-row{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:52px;margin-top:44px}
+.plogo{opacity:.4;filter:grayscale(1);transition:.3s;display:flex;align-items:center}
+.plogo:hover{opacity:.9;filter:grayscale(0)}
+.plogo img{max-height:44px;max-width:140px;object-fit:contain}
+.cta2grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:60px;border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.cta2-left{background:var(--green);padding:52px 44px;position:relative;overflow:hidden}
+.cta2-left::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#185e2c,#1e7a3a)}
+.cta2-left h3{font-family:var(--serif);font-size:1.55rem;color:#fff;position:relative;z-index:1}
+.cta2-left p{color:rgba(242,247,243,.72);margin-top:10px;position:relative;z-index:1}
+.cta2-left a{margin-top:24px;position:relative;z-index:1;display:inline-block}
+.cta2-right{background:var(--dark2);padding:52px 44px}
+.cta2-right h3{font-family:var(--serif);font-size:1.55rem;color:var(--white)}
+.cta2-right p{color:var(--gray);margin-top:10px;font-size:.9rem}
+.cta2-right a{color:var(--green3);text-decoration:none;font-weight:600;display:block;margin-top:14px;transition:color .2s;font-size:.92rem}
+.cta2-right a:hover{color:#fff}
+@media(max-width:900px){.port-grid{grid-template-columns:1fr 1fr}.cta2grid{grid-template-columns:1fr}}
+@media(max-width:600px){.port-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <nav id="nav">
   <a href="../index.html" class="nav-logo">
     <div class="nav-logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg></div>
-    <span>Envert <span style="color:var(--green3)">Canada</span></span>
+    <div class="nav-logo-text"><span class="brand-main">Envert Canada</span><span class="brand-sub">Energizing Waste</span></div>
   </a>
   <div class="nav-links" id="navLinks">
     <a href="../index.html">Home</a>
@@ -57,84 +60,85 @@
 <div class="page-hero">
   <span class="section-tag page-hero-tag">Industrial Installations</span>
   <h1>Our <em style="color:var(--green3);font-style:italic">Projects</em></h1>
-  <p>Real-world CCC plants operating in Germany and Spain — proof that waste-to-fuel technology works at industrial scale.</p>
+  <p>Real-world CCC plants operating in Germany and Spain — proof that waste-to-fuel technology works at full industrial scale.</p>
 </div>
 
 <section class="section">
   <span class="section-tag fade">Gallery</span>
   <h2 class="section-title fade">Installations across <em>Europe &amp; North America</em></h2>
-  <div class="portfolio-grid">
-    <div class="portfolio-item fade">
-      <img src="../assets/uploads/2019/12/Condenser-reactor.webp" alt="Condenser and Reactor CCC"/>
+  <p class="section-lead fade">Three turnkey plants are currently in operation — in Hannover and München (Germany) and Albacete (Spain) — with the North American implementation underway in Montreal, QC.</p>
+  <div class="port-grid">
+    <div class="port-item scale-in">
+      <img src="../assets/uploads/2019/12/Condenser-reactor.webp" alt="Condenser and Reactor CCC" loading="lazy"/>
       <div class="port-ov"></div>
       <div class="port-info"><div class="port-tag">CCC Reactor</div><div class="port-name">Condenser &amp; Reactor CCC</div><div class="port-loc">Albacete, Spain</div></div>
     </div>
-    <div class="portfolio-item fade fd1">
-      <img src="../assets/uploads/2019/12/Condensation-Unit-2.webp" alt="Condensation Unit"/>
+    <div class="port-item scale-in fd1">
+      <img src="../assets/uploads/2019/12/Condensation-Unit-2.webp" alt="Condensation Unit" loading="lazy"/>
       <div class="port-ov"></div>
       <div class="port-info"><div class="port-tag">Condensation</div><div class="port-name">Condensation Unit</div><div class="port-loc">Albacete, Spain</div></div>
     </div>
-    <div class="portfolio-item fade fd2">
-      <img src="../assets/uploads/2019/12/Extruder-Entry1280.webp" alt="Extruder Entry"/>
+    <div class="port-item scale-in fd2">
+      <img src="../assets/uploads/2019/12/Extruder-Entry1280.webp" alt="Extruder Entry" loading="lazy"/>
       <div class="port-ov"></div>
       <div class="port-info"><div class="port-tag">Extruder</div><div class="port-name">Extruder Entry</div><div class="port-loc">Hannover Plant, Germany</div></div>
     </div>
-    <div class="portfolio-item fade">
-      <img src="../assets/uploads/2019/12/Cogeneration.webp" alt="Cogeneration unit"/>
+    <div class="port-item scale-in fd1">
+      <img src="../assets/uploads/2019/12/Cogeneration.webp" alt="Cogeneration unit" loading="lazy"/>
       <div class="port-ov"></div>
-      <div class="port-info"><div class="port-tag">Cogeneration</div><div class="port-name">CHP — Cogenerator</div><div class="port-loc">Albacete, Spain</div></div>
+      <div class="port-info"><div class="port-tag">Cogeneration</div><div class="port-name">CHP — Cogenerator Unit</div><div class="port-loc">Albacete, Spain</div></div>
     </div>
-    <div class="portfolio-item fade fd1">
-      <img src="../assets/uploads/2019/12/WhatsApp-Image-2018-05-07-at-13.16.37.webp" alt="Hannover Plant"/>
+    <div class="port-item scale-in fd2">
+      <img src="../assets/uploads/2019/12/WhatsApp-Image-2018-05-07-at-13.16.37.webp" alt="Hannover Plant" loading="lazy"/>
       <div class="port-ov"></div>
-      <div class="port-info"><div class="port-tag">Full Plant</div><div class="port-name">Reactor CCC — Full View</div><div class="port-loc">Hannover, Germany</div></div>
+      <div class="port-info"><div class="port-tag">Full Plant</div><div class="port-name">CCC Reactor — Full View</div><div class="port-loc">Hannover, Germany</div></div>
     </div>
-    <div class="portfolio-item fade fd2">
-      <img src="../assets/uploads/2019/12/WhatsApp-Image-2018-05-07-at-13.16.371.webp" alt="Plant overview"/>
+    <div class="port-item scale-in fd3">
+      <img src="../assets/uploads/2019/12/WhatsApp-Image-2018-05-07-at-13.16.371.webp" alt="Plant overview" loading="lazy"/>
       <div class="port-ov"></div>
       <div class="port-info"><div class="port-tag">Installation</div><div class="port-name">Electronic Command Boards</div><div class="port-loc">Hannover, Germany</div></div>
     </div>
-    <div class="portfolio-item fade">
-      <img src="../assets/uploads/2019/12/WhatsApp-Image-2018-05-07-at-14.40.311.webp" alt="Plant detail"/>
+    <div class="port-item scale-in">
+      <img src="../assets/uploads/2019/12/WhatsApp-Image-2018-05-07-at-14.40.311.webp" alt="Reactor detail" loading="lazy"/>
       <div class="port-ov"></div>
-      <div class="port-info"><div class="port-tag">Reactor</div><div class="port-name">CCC Reactor Insulated</div><div class="port-loc">Hannover, Germany</div></div>
+      <div class="port-info"><div class="port-tag">Reactor</div><div class="port-name">CCC Reactor — Insulated</div><div class="port-loc">Hannover, Germany</div></div>
     </div>
-    <div class="portfolio-item fade fd1">
-      <img src="../assets/uploads/2019/12/WhatsApp-Image-2018-05-07-at-14.40.32-1024x768.webp" alt="Doser"/>
+    <div class="port-item scale-in fd1">
+      <img src="../assets/uploads/2019/12/WhatsApp-Image-2018-05-07-at-14.40.32-1024x768.webp" alt="Doser unit" loading="lazy"/>
       <div class="port-ov"></div>
       <div class="port-info"><div class="port-tag">Doser</div><div class="port-name">Doser — Waste Feeder</div><div class="port-loc">Albacete, Spain</div></div>
     </div>
-    <div class="portfolio-item fade fd2">
-      <img src="../assets/uploads/2019/12/IMG_20-1024x768.webp" alt="Plant interior"/>
+    <div class="port-item scale-in fd2">
+      <img src="../assets/uploads/2019/12/IMG_20-1024x768.webp" alt="Plant interior" loading="lazy"/>
       <div class="port-ov"></div>
       <div class="port-info"><div class="port-tag">Interior</div><div class="port-name">Plant Interior Overview</div><div class="port-loc">Hannover, Germany</div></div>
     </div>
   </div>
 </section>
 
-<section class="section partners-section">
+<section class="section" style="background:var(--dark2)">
   <div style="text-align:center">
-    <span class="section-tag fade">Our Partners &amp; Clients</span>
+    <span class="section-tag fade">Partners &amp; Clients</span>
     <h2 class="section-title fade" style="font-size:1.8rem">Trusted by leading <em>industrial organizations</em></h2>
   </div>
-  <div class="partner-row">
-    <div class="partner-logo fade"><img src="../assets/uploads/2019/12/Logo_ESA.webp" alt="ESA AG"/></div>
-    <div class="partner-logo fade fd1"><img src="../assets/uploads/2024/01/Logo_biocon.webp" alt="Biocon Energy GmbH"/></div>
-    <div class="partner-logo fade fd2"><img src="../assets/uploads/2024/01/Stadler_logo.webp" alt="Stadler"/></div>
-    <div class="partner-logo fade fd3"><img src="../assets/uploads/2019/12/Aaronn.webp" alt="Aaronn" style="border-radius:4px;height:40px;object-fit:cover"/></div>
+  <div class="partners-row stagger">
+    <div class="plogo"><img src="../assets/uploads/2019/12/Logo_ESA.webp" alt="ESA AG" loading="lazy"/></div>
+    <div class="plogo"><img src="../assets/uploads/2024/01/Logo_biocon.webp" alt="Biocon Energy GmbH" loading="lazy"/></div>
+    <div class="plogo"><img src="../assets/uploads/2024/01/Stadler_logo.webp" alt="Stadler" loading="lazy"/></div>
+    <div class="plogo"><img src="../assets/uploads/2019/12/Aaronn.webp" alt="Aaronn" style="border-radius:4px;height:40px;object-fit:cover" loading="lazy"/></div>
   </div>
 </section>
 
-<section class="section" style="padding-top:0">
-  <div class="cta-contact">
-    <div class="cta-left">
+<section class="section">
+  <div class="cta2grid">
+    <div class="cta2-left fade">
       <h3>Let's talk about your project</h3>
       <p>Ready to implement a CCC plant at your facility? We'd love to discuss the possibilities.</p>
       <a href="../contact/index.html" class="btn btn-acid">Request a Quote</a>
     </div>
-    <div class="cta-right">
+    <div class="cta2-right fade fd1">
       <h3>Get in Touch</h3>
-      <p>Our team is available to answer your questions about implementation, costs, and timelines.</p>
+      <p>Our team answers questions about implementation, costs, timelines, and technical specifications.</p>
       <a href="mailto:contact@envert.ca">contact@envert.ca →</a>
       <a href="tel:+14503741402">+1 450 374 1402 →</a>
       <a href="tel:+15143777787">+1 514 377 7787 →</a>
@@ -144,7 +148,7 @@
 
 <footer>
   <div class="footer-grid">
-    <div class="footer-brand"><div class="nav-logo" style="margin-bottom:0"><div class="nav-logo-mark"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg></div><span style="font-family:var(--serif);font-weight:800;color:var(--white)">Envert Canada</span></div><p>Energizing waste, powering a cleaner planet.</p></div>
+    <div class="footer-brand"><div class="nav-logo" style="pointer-events:none"><div class="nav-logo-mark"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg></div><div class="nav-logo-text"><span class="brand-main">Envert Canada</span><span class="brand-sub">Energizing Waste</span></div></div><p>Energizing waste, powering a cleaner planet.</p></div>
     <div class="footer-col"><h4>Company</h4><ul><li><a href="../about/index.html">About</a></li><li><a href="../technology/index.html">Technology</a></li><li><a href="index.html">Portfolio</a></li><li><a href="../team/index.html">Team</a></li></ul></div>
     <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@envert.ca">contact@envert.ca</a></li><li><a href="tel:+14503741402">+1 450 374 1402</a></li><li><a href="tel:+15143777787">+1 514 377 7787</a></li></ul></div>
     <div class="footer-col"><h4>Address</h4><ul><li><a href="#">Pavillon J.-A. Bombardier</a></li><li><a href="#">5155 Ave Decelles</a></li><li><a href="#">Montréal, QC H3T 2B1</a></li></ul></div>

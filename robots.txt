@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://envert.ca/sitemap.xml
+
+# Block unnecessary paths
+Disallow: /assets/uploads/elementor/

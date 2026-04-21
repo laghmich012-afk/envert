@@ -3,215 +3,144 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Envert Canada — Energizing Waste</title>
-<link rel="icon" href="assets/uploads/2019/12/cropped-Eco_Green_Logo_Envert2-Favicon-32x32.webp" sizes="32x32"/>
+<title>Envert Canada — Energizing Waste | Cold Catalytic Conversion Technology</title>
+<meta name="description" content="Envert Canada converts plastic, tires, and industrial waste into clean fuel, heat, and electricity using Cold Catalytic Conversion — the first CCC plant in North America. Based in Montreal, QC."/>
+<meta name="keywords" content="waste to fuel, cold catalytic conversion, CCC reactor, plastic recycling, renewable energy Canada, Montreal, RDF, synthetic fuel"/>
+<meta name="author" content="Envert Canada Inc."/>
+<meta property="og:title" content="Envert Canada — Energizing Waste"/>
+<meta property="og:description" content="Converting waste into clean fuel, heat and electricity with patented Cold Catalytic Conversion technology. First implementation in North America."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://envert.ca/"/>
+<meta property="og:image" content="https://envert.ca/assets/uploads/2019/12/New-logo-4-complet-small.webp"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Envert Canada — Energizing Waste"/>
+<meta name="twitter:description" content="First Cold Catalytic Conversion plant in North America. Waste → Fuel, Heat, Electricity."/>
+<link rel="canonical" href="https://envert.ca/"/>
+<link rel="icon" href="assets/uploads/2019/12/cropped-Eco_Green_Logo_Envert2-Favicon-32x32.png" sizes="32x32"/>
 <link rel="stylesheet" href="assets/style.css"/>
 <style>
-/* ── HERO ── */
-#hero {
-  min-height: 100vh; position: relative; overflow: hidden;
-  display: flex; align-items: center; padding: 0 6%;
-  background: var(--dark);
-}
-.hero-bg {
-  position: absolute; inset: 0;
-  background:
-    radial-gradient(ellipse 80% 70% at 100% 60%, rgba(30,122,58,.28) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 50% at 5%  80%, rgba(143,255,90,.06) 0%, transparent 50%),
-    linear-gradient(170deg, #050807 0%, #0a0e0b 60%, #0c1410 100%);
-}
-.hero-grid-lines {
-  position: absolute; inset: 0; overflow: hidden; opacity: .04;
-  background-image:
-    linear-gradient(rgba(62,206,105,1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(62,206,105,1) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-.hero-content { position: relative; z-index: 1; max-width: 680px; animation: heroIn .9s ease both; }
-@keyframes heroIn { from { opacity:0; transform:translateY(32px); } to { opacity:1; transform:none; } }
-.hero-eyebrow {
-  display: inline-flex; align-items: center; gap: 10px;
-  background: rgba(143,255,90,.08); border: 1px solid rgba(143,255,90,.2);
-  color: var(--acid); font-size: .72rem; font-weight: 700;
-  letter-spacing: 2px; text-transform: uppercase;
-  padding: 7px 16px; border-radius: 2px; margin-bottom: 28px;
-}
-.hero-eyebrow::before {
-  content: ''; width: 7px; height: 7px; border-radius: 50%;
-  background: var(--acid); box-shadow: 0 0 10px var(--acid);
-  animation: blink 2s infinite;
-}
-@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.2} }
-.hero-title { color: var(--white); font-weight: 800; }
-.hero-title .line2 { color: var(--green3); display: block; }
-.hero-sub {
-  margin: 22px 0 40px; font-size: 1.08rem; color: var(--gray2);
-  max-width: 500px; line-height: 1.75; font-weight: 300;
-}
-.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
-.hero-right {
-  position: absolute; right: 6%; top: 50%; transform: translateY(-50%);
-  display: flex; flex-direction: column; gap: 20px;
-  animation: heroIn .9s .35s ease both;
-}
-.hero-stat {
-  background: rgba(22,32,25,.8); border: 1px solid var(--border);
-  border-radius: var(--r); padding: 20px 28px; text-align: right;
-  backdrop-filter: blur(8px);
-}
-.hero-stat .num {
-  font-family: var(--serif); font-size: 2.4rem; font-weight: 800;
-  color: var(--green3); line-height: 1;
-}
-.hero-stat .lbl { font-size: .7rem; color: var(--gray); letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; }
-.hero-scroll {
-  position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: 8px;
-  color: var(--gray); font-size: .65rem; letter-spacing: 2.5px; text-transform: uppercase;
-  animation: bob 2.5s ease-in-out infinite;
-}
-.hero-scroll::after { content: ''; width: 1px; height: 40px; background: rgba(138,158,143,.3); }
-@keyframes bob { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(7px)} }
+/* HERO */
+#hero{min-height:100vh;position:relative;overflow:hidden;display:flex;align-items:center;padding:0 6%;background:var(--dark)}
+#particles{position:absolute;inset:0;width:100%;height:100%}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 70% at 100% 60%,rgba(30,122,58,.28) 0%,transparent 60%),radial-gradient(ellipse 50% 50% at 5% 80%,rgba(143,255,90,.06) 0%,transparent 50%),linear-gradient(170deg,#050807 0%,#0a0e0b 60%,#0c1410 100%)}
+.hero-grid{position:absolute;inset:0;opacity:.04;background-image:linear-gradient(rgba(62,206,105,1) 1px,transparent 1px),linear-gradient(90deg,rgba(62,206,105,1) 1px,transparent 1px);background-size:60px 60px}
+.hero-content{position:relative;z-index:1;max-width:680px;animation:heroIn .9s ease both}
+@keyframes heroIn{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;background:rgba(143,255,90,.08);border:1px solid rgba(143,255,90,.2);color:#8fff5a;font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:7px 16px;border-radius:2px;margin-bottom:28px}
+.hero-eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:#8fff5a;box-shadow:0 0 10px #8fff5a;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.hero-title{color:var(--white);font-weight:800}
+.hero-title .line2{color:var(--green3);display:block}
+.hero-sub{margin:22px 0 40px;font-size:1.08rem;color:var(--gray2);max-width:500px;line-height:1.78;font-weight:400}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.hero-right{position:absolute;right:6%;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:20px;animation:heroIn .9s .35s ease both}
+.hero-stat{background:rgba(22,32,25,.85);border:1px solid var(--border);border-radius:var(--r);padding:22px 30px;text-align:right;backdrop-filter:blur(8px)}
+.hero-stat .num{font-family:var(--serif);font-size:2.6rem;font-weight:800;color:var(--green3);line-height:1}
+.hero-stat .lbl{font-size:.7rem;color:var(--gray);letter-spacing:1px;text-transform:uppercase;margin-top:4px}
+.hero-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--gray);font-size:.65rem;letter-spacing:2.5px;text-transform:uppercase;animation:bob 2.5s ease-in-out infinite}
+.hero-scroll::after{content:'';width:1px;height:40px;background:rgba(138,158,143,.3)}
+@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(7px)}}
 
-/* ── OUTPUTS STRIP ── */
-#outputs {
-  background: var(--dark2);
-  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
-  padding: 60px 6%;
-}
-.outputs-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; margin-top: 40px; }
-.output-item {
-  background: var(--dark); padding: 36px 28px;
-  border-right: 1px solid var(--border);
-  position: relative; overflow: hidden; transition: background .3s;
-}
-.output-item:last-child { border-right: none; }
-.output-item:hover { background: rgba(22,32,25,.9); }
-.output-icon {
-  width: 48px; height: 48px; border-radius: 50%;
-  background: rgba(30,122,58,.2); border: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: center; margin-bottom: 18px;
-}
-.output-icon svg { width: 22px; height: 22px; stroke: var(--green3); fill: none; }
-.output-item h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 8px; }
-.output-item p { font-size: .85rem; color: var(--gray); line-height: 1.6; }
+/* OUTPUTS */
+#outputs{background:var(--dark2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:70px 6%}
+.outputs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:44px}
+.output-item{background:var(--dark);padding:36px 28px;border-right:1px solid var(--border);position:relative;overflow:hidden;transition:background .3s}
+.output-item:last-child{border-right:none}
+.output-item:hover{background:rgba(22,32,25,.9)}
+.output-item::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--green),var(--green3));transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.output-item:hover::before{transform:scaleX(1)}
+.output-icon{width:48px;height:48px;border-radius:50%;background:rgba(30,122,58,.2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.output-icon svg{width:22px;height:22px;stroke:var(--green3);fill:none}
+.output-item h3{font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:8px}
+.output-item p{font-size:.86rem;color:var(--gray);line-height:1.65}
 
-/* ── ABOUT STRIP ── */
-#about-strip {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
-}
-.about-img-wrap { position: relative; }
-.about-img-wrap img {
-  width: 100%; border-radius: var(--r); display: block;
-  filter: brightness(.85) contrast(1.1);
-}
-.about-img-badge {
-  position: absolute; bottom: -20px; right: -20px;
-  background: var(--dark2); border: 1px solid var(--border);
-  border-radius: var(--r); padding: 20px 24px;
-  display: flex; align-items: center; gap: 14px;
-}
-.about-img-badge .bn { font-family: var(--serif); font-size: 2rem; font-weight: 800; color: var(--green3); line-height: 1; }
-.about-img-badge .bt { font-size: .72rem; color: var(--gray); line-height: 1.4; max-width: 80px; }
-.mvv { margin-top: 32px; display: flex; flex-direction: column; gap: 14px; }
-.mvv-item { display: flex; gap: 12px; align-items: flex-start; }
-.mvv-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green3); flex-shrink: 0; margin-top: 7px; }
-.mvv-item strong { color: var(--green3); font-weight: 600; margin-right: 4px; }
+/* ABOUT STRIP */
+#about-strip{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-img-wrap{position:relative}
+.about-img-wrap img{width:100%;border-radius:var(--r);display:block;filter:brightness(.85) contrast(1.08)}
+.about-img-badge{position:absolute;bottom:-20px;right:-20px;background:var(--dark2);border:1px solid var(--border);border-radius:var(--r);padding:20px 24px;display:flex;align-items:center;gap:14px}
+.about-img-badge .bn{font-family:var(--serif);font-size:2rem;font-weight:800;color:var(--green3);line-height:1}
+.about-img-badge .bt{font-size:.72rem;color:var(--gray);line-height:1.4;max-width:80px}
+.mvv{margin-top:32px;display:flex;flex-direction:column;gap:14px}
+.mvv-item{display:flex;gap:12px;align-items:flex-start}
+.mvv-dot{width:8px;height:8px;border-radius:50%;background:var(--green3);flex-shrink:0;margin-top:7px}
+.mvv-item strong{color:var(--green3);font-weight:700;margin-right:4px}
 
-/* ── TECHNOLOGY PREVIEW ── */
-#tech-preview { background: var(--dark2); }
-.tech-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 52px; }
-.tech-card {
-  background: var(--dark); border: 1px solid var(--border);
-  border-radius: var(--r); padding: 32px;
-  position: relative; overflow: hidden; transition: .3s;
-}
-.tech-card::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
-  background: linear-gradient(90deg, var(--green), var(--green3));
-  transform: scaleX(0); transform-origin: left; transition: transform .4s;
-}
-.tech-card:hover { border-color: rgba(62,206,105,.4); transform: translateY(-4px); }
-.tech-card:hover::before { transform: scaleX(1); }
-.tech-num { font-family: var(--serif); font-size: 2.8rem; font-weight: 800; color: rgba(62,206,105,.12); line-height: 1; margin-bottom: 8px; }
-.tech-card h3 { font-size: 1.05rem; color: var(--white); margin-bottom: 10px; }
-.tech-card p { font-size: .85rem; color: var(--gray); line-height: 1.65; }
+/* TECH PREVIEW */
+#tech-preview{background:var(--dark2)}
+.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:52px}
+.tech-card{background:var(--dark);border:1px solid var(--border);border-radius:var(--r);padding:32px;position:relative;overflow:hidden;transition:.3s}
+.tech-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--green),var(--green3));transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.tech-card:hover{border-color:rgba(62,206,105,.4);transform:translateY(-4px)}
+.tech-card:hover::before{transform:scaleX(1)}
+.tech-num{font-family:var(--serif);font-size:2.8rem;font-weight:800;color:rgba(62,206,105,.1);line-height:1;margin-bottom:8px}
+.tech-card h3{font-size:1.05rem;color:var(--white);margin-bottom:10px}
+.tech-card p{font-size:.86rem;color:var(--gray);line-height:1.65}
 
-/* ── PROJECTS PREVIEW ── */
-#projects-preview { }
-.proj-grid { display: grid; grid-template-columns: repeat(3,1fr); grid-template-rows: 240px 240px; gap: 4px; margin-top: 48px; }
-.proj-item { position: relative; overflow: hidden; cursor: pointer; }
-.proj-item:nth-child(1) { grid-row: span 2; }
-.proj-bg { position: absolute; inset: 0; transition: transform .55s; }
-.proj-item:hover .proj-bg { transform: scale(1.05); }
-.proj-ov {
-  position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(5,8,7,.9) 0%, transparent 55%);
-  opacity: .75; transition: opacity .3s;
-}
-.proj-item:hover .proj-ov { opacity: 1; }
-.proj-info {
-  position: absolute; bottom: 0; left: 0; right: 0;
-  padding: 20px 24px; z-index: 2;
-  transform: translateY(6px); transition: transform .3s;
-}
-.proj-item:hover .proj-info { transform: none; }
-.proj-tag { font-size: .62rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--green3); margin-bottom: 4px; }
-.proj-name { font-family: var(--serif); font-size: 1rem; font-weight: 700; color: var(--white); }
-.proj-item:nth-child(1) .proj-name { font-size: 1.4rem; }
-.pb1 { background: linear-gradient(135deg,#0d1f10,#1a3d1e); }
-.pb2 { background: linear-gradient(135deg,#0f1e14,#1b3320); }
-.pb3 { background: linear-gradient(135deg,#111c13,#1c3021); }
-.pb4 { background: linear-gradient(135deg,#0c1a0f,#18301b); }
-.pb5 { background: linear-gradient(135deg,#101c12,#1d3522); }
-.pb6 { background: linear-gradient(135deg,#0e1c11,#1e3520); }
-.proj-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(.7); }
+/* STATS BAR */
+#stats-bar{background:var(--green);padding:56px 6%;position:relative;overflow:hidden}
+#stats-bar::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#185e2c,#1e7a3a)}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;z-index:1}
+.stat-item{text-align:center;padding:0 20px;border-right:1px solid rgba(255,255,255,.15)}
+.stat-item:last-child{border-right:none}
+.stat-item .snum{font-family:var(--serif);font-size:3rem;font-weight:800;color:#fff;line-height:1}
+.stat-item .slbl{font-size:.75rem;color:rgba(255,255,255,.7);letter-spacing:1px;text-transform:uppercase;margin-top:6px;font-weight:500}
 
-/* ── PARTNERS ── */
-#partners { background: var(--dark2); padding: 60px 6%; }
-.partners-grid { display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; margin-top: 36px; }
-.partner-item { opacity: .4; filter: grayscale(1); transition: .3s; }
-.partner-item:hover { opacity: .85; filter: grayscale(0); }
-.partner-item img { height: 40px; object-fit: contain; }
+/* PROJECTS PREVIEW */
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:240px 240px;gap:4px;margin-top:48px}
+.proj-item{position:relative;overflow:hidden}
+.proj-item:nth-child(1){grid-row:span 2}
+.proj-bg{position:absolute;inset:0;background:var(--dark2)}
+.proj-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.7);transition:transform .55s,filter .4s}
+.proj-item:hover .proj-img{transform:scale(1.06);filter:brightness(.5)}
+.proj-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,8,7,.9) 0%,transparent 55%);opacity:.75;transition:opacity .3s}
+.proj-item:hover .proj-ov{opacity:1}
+.proj-info{position:absolute;bottom:0;left:0;right:0;padding:20px 24px;z-index:2;transform:translateY(6px);transition:.3s}
+.proj-item:hover .proj-info{transform:none}
+.proj-tag{font-size:.62rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green3);margin-bottom:4px}
+.proj-name{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--white)}
+.proj-item:nth-child(1) .proj-name{font-size:1.4rem}
 
-/* ── CTA ── */
-#cta {
-  background: var(--green);
-  padding: 80px 6%;
-  display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap;
-  position: relative; overflow: hidden;
-}
-#cta::before {
-  content: ''; position: absolute; inset: 0;
-  background: linear-gradient(135deg, #185e2c 0%, #1e7a3a 50%, #1a6832 100%);
-}
-.cta-txt { position: relative; z-index: 1; }
-.cta-txt h2 { color: var(--white); font-size: clamp(1.5rem,2.8vw,2.2rem); }
-.cta-txt p { color: rgba(242,247,243,.7); margin-top: 8px; }
-.cta-acts { position: relative; z-index: 1; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+/* PARTNERS */
+#partners{background:var(--dark2);padding:60px 6%}
+.partners-grid{display:flex;align-items:center;justify-content:center;gap:52px;flex-wrap:wrap;margin-top:36px}
+.partner-item{opacity:.4;filter:grayscale(1);transition:.3s}
+.partner-item:hover{opacity:.85;filter:grayscale(0)}
+.partner-item img{height:40px;object-fit:contain}
 
+/* CTA BANNER */
+#cta{background:var(--green);padding:80px 6%;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;position:relative;overflow:hidden}
+#cta::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#185e2c 0%,#1e7a3a 50%,#1a6832 100%)}
+.cta-txt{position:relative;z-index:1}
+.cta-txt h2{color:#fff;font-size:clamp(1.5rem,2.8vw,2.2rem)}
+.cta-txt p{color:rgba(242,247,243,.7);margin-top:8px}
+.cta-acts{position:relative;z-index:1;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+
+@media(max-width:1100px){.hero-right{display:none}}
 @media(max-width:900px){
-  .hero-right{display:none;}
-  #about-strip{grid-template-columns:1fr;}
-  .outputs-grid,.tech-grid{grid-template-columns:1fr 1fr;}
-  .proj-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
-  .proj-item:nth-child(1){grid-row:auto;}
-  #cta{flex-direction:column;}
+  #about-strip{grid-template-columns:1fr}
+  .about-img-badge{display:none}
+  .outputs-grid,.tech-grid{grid-template-columns:1fr 1fr}
+  .stats-row{grid-template-columns:1fr 1fr;row-gap:28px}
+  .stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:24px}
+  .stat-item:nth-child(3),.stat-item:nth-child(4){border-bottom:none}
+  .proj-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .proj-item:nth-child(1){grid-row:auto}
+  #cta{flex-direction:column}
 }
 @media(max-width:600px){
-  .outputs-grid,.tech-grid{grid-template-columns:1fr;}
+  .outputs-grid,.tech-grid{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:1fr}
+  .stat-item{border-bottom:1px solid rgba(255,255,255,.12)!important;padding-bottom:20px!important}
+  .proj-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
-
-<!-- NAV -->
 <nav id="nav">
   <a href="index.html" class="nav-logo">
-    <div class="nav-logo-mark">
-      <svg viewBox="0 0 24 24"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg>
-    </div>
-    <span>Envert <span style="color:var(--green3)">Canada</span></span>
+    <div class="nav-logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg></div>
+    <div class="nav-logo-text"><span class="brand-main">Envert Canada</span><span class="brand-sub">Energizing Waste</span></div>
   </a>
   <div class="nav-links" id="navLinks">
     <a href="index.html">Home</a>
@@ -224,16 +153,13 @@
   <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
+  <canvas id="particles"></canvas>
   <div class="hero-bg"></div>
-  <div class="hero-grid-lines"></div>
+  <div class="hero-grid"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Montreal, Canada · First in North America</div>
-    <h1 class="hero-title">
-      Renewable Energy<br/>
-      <span class="line2">from Waste Recycling</span>
-    </h1>
+    <div class="hero-eyebrow">Montreal, Canada &nbsp;·&nbsp; First in North America</div>
+    <h1 class="hero-title">Renewable Energy<span class="line2">from Waste Recycling</span></h1>
     <p class="hero-sub">Envert Canada converts plastic, tires, and industrial waste into clean fuel, heat, and electricity using Cold Catalytic Conversion — a patented, zero-emission technology.</p>
     <div class="hero-btns">
       <a href="technology/index.html" class="btn btn-acid">Discover the Technology</a>
@@ -241,66 +167,52 @@
     </div>
   </div>
   <div class="hero-right">
-    <div class="hero-stat">
-      <div class="num" data-count="70" data-suffix="%+">0%</div>
-      <div class="lbl">Conversion Rate</div>
-    </div>
-    <div class="hero-stat">
-      <div class="num" data-count="850" data-suffix="L">0L</div>
-      <div class="lbl">Fuel per tonne of waste</div>
-    </div>
-    <div class="hero-stat">
-      <div class="num" data-count="20" data-suffix=" yrs">0 yrs</div>
-      <div class="lbl">Reactor Lifespan</div>
-    </div>
+    <div class="hero-stat"><div class="num" data-count="70" data-suffix="%+">0%</div><div class="lbl">Conversion Rate</div></div>
+    <div class="hero-stat"><div class="num" data-count="850" data-suffix="L">0L</div><div class="lbl">Fuel per tonne of waste</div></div>
+    <div class="hero-stat"><div class="num" data-count="20" data-suffix=" yrs">0 yrs</div><div class="lbl">Reactor Lifespan</div></div>
   </div>
   <div class="hero-scroll">Scroll</div>
 </section>
 
-<!-- OUTPUTS -->
 <section id="outputs">
   <div style="text-align:center">
     <span class="section-tag fade">What We Produce</span>
     <h2 class="section-title fade">From every tonne of waste,<br/><em>multiple energy outputs</em></h2>
   </div>
-  <div class="outputs-grid">
-    <div class="output-item fade">
+  <div class="outputs-grid stagger">
+    <div class="output-item">
       <div class="output-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M5 12V7l7-5 7 5v5M5 12v5l7 5 7-5v-5M12 2v20"/></svg></div>
       <h3>Waste Recycling</h3>
-      <p>RDF, plastics, organics, textiles, used tires, and wood — all processed in a single reactor.</p>
+      <p>RDF, plastics, organics, textiles, used tires, and wood — all processed in a single reactor with no major adjustments.</p>
     </div>
-    <div class="output-item fade fd1">
+    <div class="output-item">
       <div class="output-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M3 12h18M12 3l3 9-3 9M9 6l-6 6 6 6"/></svg></div>
       <h3>Synthetic Fuel</h3>
-      <p>High-quality light fuel with a very high calorific value — refined into Naphtha, Gasoline, Kerosene, or Diesel.</p>
+      <p>High-quality light fuel refined into Naphtha, Gasoline, Kerosene, or Diesel — direct replacement for fossil fuels.</p>
     </div>
-    <div class="output-item fade fd2">
+    <div class="output-item">
       <div class="output-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg></div>
       <h3>Heat</h3>
-      <p>Cogeneration and sale of heat for neighboring plants via our heat exchangers.</p>
+      <p>Cogeneration and sale of heat for neighboring industrial plants via our efficient heat exchangers.</p>
     </div>
-    <div class="output-item fade fd3">
+    <div class="output-item">
       <div class="output-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
       <h3>Electricity</h3>
-      <p>Generated electricity sold to the grid, for self-consumption, or to neighboring industrial plants.</p>
+      <p>Generated electricity sold to the public grid, for self-consumption, or supplied directly to neighboring plants.</p>
     </div>
   </div>
 </section>
 
-<!-- ABOUT STRIP -->
 <section class="section" id="about-strip">
-  <div class="about-img-wrap fade">
-    <img src="assets/uploads/2019/12/WhatsApp-Image-2018-05-07-at-13.16.37.webp" alt="CCC Reactor plant"/>
-    <div class="about-img-badge">
-      <div class="bn">2014</div>
-      <div class="bt">Founded in Montreal, QC</div>
-    </div>
+  <div class="about-img-wrap fade-left">
+    <img src="assets/uploads/2019/12/WhatsApp-Image-2018-05-07-at-13.16.37.webp" alt="CCC Reactor plant" loading="lazy"/>
+    <div class="about-img-badge"><div class="bn">2014</div><div class="bt">Founded in Montreal, QC</div></div>
   </div>
-  <div class="fade fd1">
+  <div class="fade">
     <span class="section-tag">Who We Are</span>
     <h2 class="section-title">Energizing Waste,<br/><em>Powering Industry</em></h2>
     <div class="divider"></div>
-    <p class="section-lead">EnVert is a holding company owned by Thermo Transcal Inc. and BIOCON GmbH / ESA AG — combining Canadian thermal engineering expertise with German-patented waste-to-fuel conversion technology.</p>
+    <p class="section-lead">EnVert is a holding company owned by Thermo Transcal Inc. and BIOCON GmbH / ESA AG — combining Canadian thermal engineering expertise with German-patented waste-to-fuel conversion technology. We are the first to implement this solution in North America.</p>
     <div class="mvv">
       <div class="mvv-item"><div class="mvv-dot"></div><p><strong>Mission:</strong> Energizing waste, Powering a cleaner industry.</p></div>
       <div class="mvv-item"><div class="mvv-dot"></div><p><strong>Value:</strong> Commitment to sustainability and fairness.</p></div>
@@ -310,180 +222,105 @@
   </div>
 </section>
 
-<!-- TECHNOLOGY PREVIEW -->
-<section class="section" id="tech-preview">
-  <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px">
-    <div>
-      <span class="section-tag fade">Cold Catalytic Conversion</span>
-      <h2 class="section-title fade">Why our<br/><em>technology is different</em></h2>
-    </div>
-    <a href="technology/index.html" class="btn btn-outline fade">Full Technology →</a>
-  </div>
-  <div class="tech-grid">
-    <div class="tech-card fade">
-      <div class="tech-num">01</div>
-      <h3>Efficiency</h3>
-      <p>1,000 kg of waste converts to up to 850 litres of high-quality fuel. Average conversion rate exceeds 70%.</p>
-    </div>
-    <div class="tech-card fade fd1">
-      <div class="tech-num">02</div>
-      <h3>Flexibility</h3>
-      <p>A single installation processes multiple types of waste — recyclable and non-recyclable — without major changes.</p>
-    </div>
-    <div class="tech-card fade fd2">
-      <div class="tech-num">03</div>
-      <h3>Compactness</h3>
-      <p>The reactor fits in a 40-ft container and can be transported, relocated, or expanded in parallel modules.</p>
-    </div>
-    <div class="tech-card fade fd3">
-      <div class="tech-num">04</div>
-      <h3>Reliability</h3>
-      <p>Remote monitoring via internet from any device. Runs 24 hours a day with minimal human intervention.</p>
-    </div>
-    <div class="tech-card fade fd1">
-      <div class="tech-num">05</div>
-      <h3>Clean Environment</h3>
-      <p>Closed reactor operating at low temperatures. No greenhouse gases emitted. No risk of leakage, pollution, or explosion.</p>
-    </div>
-    <div class="tech-card fade fd2">
-      <div class="tech-num">06</div>
-      <h3>Durability</h3>
-      <p>20–25 year lifecycle. Very little maintenance required — only twice per year — keeping operating costs extremely low.</p>
-    </div>
+<section id="stats-bar">
+  <div class="stats-row stagger">
+    <div class="stat-item"><div class="snum" data-count="70" data-suffix="%+">70%+</div><div class="slbl">Waste-to-Fuel Conversion</div></div>
+    <div class="stat-item"><div class="snum" data-count="850" data-suffix="L">850L</div><div class="slbl">Fuel per 1,000 kg Waste</div></div>
+    <div class="stat-item"><div class="snum" data-count="25" data-suffix=" yrs">25 yrs</div><div class="slbl">Reactor Lifespan</div></div>
+    <div class="stat-item"><div class="snum" data-count="3">3</div><div class="slbl">Active Plants (EU)</div></div>
   </div>
 </section>
 
-<!-- PROJECTS PREVIEW -->
-<section class="section" id="projects-preview">
+<section class="section" id="tech-preview">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px">
+    <div><span class="section-tag fade">Cold Catalytic Conversion</span><h2 class="section-title fade">Why our <em>technology is different</em></h2></div>
+    <a href="technology/index.html" class="btn btn-outline fade">Full Technology →</a>
+  </div>
+  <div class="tech-grid stagger">
+    <div class="tech-card"><div class="tech-num">01</div><h3>Efficiency</h3><p>1,000 kg of waste converts to up to 850 litres of high-quality fuel. Average conversion rate exceeds 70%.</p></div>
+    <div class="tech-card"><div class="tech-num">02</div><h3>Flexibility</h3><p>A single installation processes multiple types of waste — recyclable and non-recyclable — without major changes.</p></div>
+    <div class="tech-card"><div class="tech-num">03</div><h3>Compactness</h3><p>The reactor fits in a 40-ft container and can be transported, relocated, or expanded in parallel modules.</p></div>
+    <div class="tech-card"><div class="tech-num">04</div><h3>Reliability</h3><p>Remote monitoring via internet from any device. Runs 24 hours a day with minimal human intervention.</p></div>
+    <div class="tech-card"><div class="tech-num">05</div><h3>Clean Environment</h3><p>Closed reactor at low temperatures. No greenhouse gases emitted. No risk of leakage, pollution, or explosion.</p></div>
+    <div class="tech-card"><div class="tech-num">06</div><h3>Durability</h3><p>20–25 year lifecycle. Maintenance only twice per year — one of the lowest total-cost solutions available.</p></div>
+  </div>
+</section>
+
+<section class="section">
   <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:0">
-    <div>
-      <span class="section-tag fade">Industrial Installations</span>
-      <h2 class="section-title fade">Our Projects<br/><em>Around the World</em></h2>
-    </div>
+    <div><span class="section-tag fade">Industrial Installations</span><h2 class="section-title fade">Our Projects <em>Around the World</em></h2></div>
     <a href="portfolio/index.html" class="btn btn-outline fade">See All →</a>
   </div>
   <div class="proj-grid">
-    <div class="proj-item">
-      <div class="proj-bg pb1"></div>
-      <img class="proj-img" src="assets/uploads/2019/12/Condenser-reactor.webp" alt="Condenser and Reactor"/>
+    <div class="proj-item scale-in">
+      <div class="proj-bg"></div>
+      <img class="proj-img" src="assets/uploads/2019/12/Condenser-reactor.webp" alt="Condenser and Reactor" loading="lazy"/>
       <div class="proj-ov"></div>
-      <div class="proj-info">
-        <div class="proj-tag">CCC Reactor</div>
-        <div class="proj-name">Condenser &amp; Reactor — Albacete, Spain</div>
-      </div>
+      <div class="proj-info"><div class="proj-tag">CCC Reactor</div><div class="proj-name">Condenser &amp; Reactor — Albacete, Spain</div></div>
     </div>
-    <div class="proj-item">
-      <div class="proj-bg pb2"></div>
-      <img class="proj-img" src="assets/uploads/2019/12/Condensation-Unit-2.webp" alt="Condensation Unit"/>
+    <div class="proj-item scale-in fd1">
+      <div class="proj-bg"></div>
+      <img class="proj-img" src="assets/uploads/2019/12/Condensation-Unit-2.webp" alt="Condensation Unit" loading="lazy"/>
       <div class="proj-ov"></div>
-      <div class="proj-info">
-        <div class="proj-tag">Condensation</div>
-        <div class="proj-name">Condensation Unit — Albacete</div>
-      </div>
+      <div class="proj-info"><div class="proj-tag">Condensation</div><div class="proj-name">Condensation Unit — Albacete</div></div>
     </div>
-    <div class="proj-item">
-      <div class="proj-bg pb3"></div>
-      <img class="proj-img" src="assets/uploads/2019/12/Extruder-Entry1280.webp" alt="Extruder Entry"/>
+    <div class="proj-item scale-in fd2">
+      <div class="proj-bg"></div>
+      <img class="proj-img" src="assets/uploads/2019/12/Extruder-Entry1280.webp" alt="Extruder Entry" loading="lazy"/>
       <div class="proj-ov"></div>
-      <div class="proj-info">
-        <div class="proj-tag">Extruder</div>
-        <div class="proj-name">Extruder Entry — Hannover, Germany</div>
-      </div>
+      <div class="proj-info"><div class="proj-tag">Extruder</div><div class="proj-name">Extruder Entry — Hannover, Germany</div></div>
     </div>
-    <div class="proj-item">
-      <div class="proj-bg pb4"></div>
-      <img class="proj-img" src="assets/uploads/2019/12/Cogeneration.webp" alt="Cogeneration"/>
+    <div class="proj-item scale-in fd1">
+      <div class="proj-bg"></div>
+      <img class="proj-img" src="assets/uploads/2019/12/Cogeneration.webp" alt="Cogeneration" loading="lazy"/>
       <div class="proj-ov"></div>
-      <div class="proj-info">
-        <div class="proj-tag">Cogeneration</div>
-        <div class="proj-name">CHP Unit — Albacete</div>
-      </div>
+      <div class="proj-info"><div class="proj-tag">Cogeneration</div><div class="proj-name">CHP Unit — Albacete</div></div>
     </div>
-    <div class="proj-item">
-      <div class="proj-bg pb5"></div>
-      <img class="proj-img" src="assets/uploads/2019/12/WhatsApp-Image-2018-05-07-at-14.40.311.webp" alt="Plant"/>
+    <div class="proj-item scale-in fd2">
+      <div class="proj-bg"></div>
+      <img class="proj-img" src="assets/uploads/2019/12/WhatsApp-Image-2018-05-07-at-14.40.311.webp" alt="Hannover Plant" loading="lazy"/>
       <div class="proj-ov"></div>
-      <div class="proj-info">
-        <div class="proj-tag">Full Plant</div>
-        <div class="proj-name">Hannover Plant — Germany</div>
-      </div>
+      <div class="proj-info"><div class="proj-tag">Full Plant</div><div class="proj-name">Hannover Plant — Germany</div></div>
     </div>
   </div>
 </section>
 
-<!-- PARTNERS -->
 <section id="partners">
-  <div style="text-align:center">
-    <span class="section-tag fade">Our Partners</span>
-    <h2 class="section-title fade" style="font-size:1.6rem">Trusted by leading industrial partners</h2>
-  </div>
-  <div class="partners-grid">
-    <div class="partner-item fade"><img src="assets/uploads/2019/12/Logo_ESA.webp" alt="ESA AG"/></div>
-    <div class="partner-item fade fd1"><img src="assets/uploads/2024/01/Logo_biocon.webp" alt="Biocon Energy"/></div>
-    <div class="partner-item fade fd2"><img src="assets/uploads/2024/01/Stadler_logo.webp" alt="Stadler"/></div>
-    <div class="partner-item fade fd3"><img src="assets/uploads/2019/12/Aaronn.webp" alt="Aaronn" style="border-radius:4px"/></div>
+  <div style="text-align:center"><span class="section-tag fade">Our Partners</span><h2 class="section-title fade" style="font-size:1.6rem">Trusted by leading industrial partners</h2></div>
+  <div class="partners-grid stagger">
+    <div class="partner-item"><img src="assets/uploads/2019/12/Logo_ESA.webp" alt="ESA AG" loading="lazy"/></div>
+    <div class="partner-item"><img src="assets/uploads/2024/01/Logo_biocon.webp" alt="Biocon Energy GmbH" loading="lazy"/></div>
+    <div class="partner-item"><img src="assets/uploads/2024/01/Stadler_logo.webp" alt="Stadler" loading="lazy"/></div>
+    <div class="partner-item"><img src="assets/uploads/2019/12/Aaronn.webp" alt="Aaronn" style="border-radius:4px" loading="lazy"/></div>
   </div>
 </section>
 
-<!-- CTA -->
 <div id="cta">
-  <div class="cta-txt">
-    <h2>Ready to turn waste into value?</h2>
-    <p>We are the first solution of this technology in North America. Let's talk about your project.</p>
-  </div>
-  <div class="cta-acts">
+  <div class="cta-txt fade"><h2>Ready to turn waste into value?</h2><p>We are the first CCC solution in North America. Let's talk about your project.</p></div>
+  <div class="cta-acts fade fd1">
     <a href="contact/index.html" class="btn btn-acid">Contact Us</a>
-    <a href="technology/index.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.35);color:#fff">Learn the Technology</a>
+    <a href="technology/index.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.35);color:#fff">Our Technology</a>
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <div class="nav-logo" style="margin-bottom:0">
+      <div class="nav-logo" style="pointer-events:none">
         <div class="nav-logo-mark"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2C7 9 3 11 3 17a9 9 0 0018 0c0-6-4-8-9-15z"/></svg></div>
-        <span style="font-family:var(--serif);font-weight:800;color:var(--white)">Envert Canada</span>
+        <div class="nav-logo-text"><span class="brand-main">Envert Canada</span><span class="brand-sub">Energizing Waste</span></div>
       </div>
-      <p>Energizing waste, powering a cleaner planet. The first Cold Catalytic Conversion plant in North America.</p>
+      <p>First Cold Catalytic Conversion plant in North America. Converting waste into clean fuel, heat, and electricity.</p>
     </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="about/index.html">About Us</a></li>
-        <li><a href="technology/index.html">Technology</a></li>
-        <li><a href="portfolio/index.html">Portfolio</a></li>
-        <li><a href="team/index.html">Our Team</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Technology</h4>
-      <ul>
-        <li><a href="technology/index.html">CCC Reactor</a></li>
-        <li><a href="technology/index.html">Waste Types</a></li>
-        <li><a href="technology/index.html">Fuel Output</a></li>
-        <li><a href="technology/index.html">Why Choose Us</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <ul>
-        <li><a href="mailto:contact@envert.ca">contact@envert.ca</a></li>
-        <li><a href="tel:+14503741402">+1 450 374 1402</a></li>
-        <li><a href="tel:+15143777787">+1 514 377 7787</a></li>
-        <li><a href="contact/index.html">Send a Message</a></li>
-      </ul>
-    </div>
+    <div class="footer-col"><h4>Company</h4><ul><li><a href="about/index.html">About Us</a></li><li><a href="technology/index.html">Technology</a></li><li><a href="portfolio/index.html">Portfolio</a></li><li><a href="team/index.html">Our Team</a></li></ul></div>
+    <div class="footer-col"><h4>Technology</h4><ul><li><a href="technology/index.html">CCC Reactor</a></li><li><a href="technology/index.html">Waste Types</a></li><li><a href="technology/index.html">Fuel Output</a></li><li><a href="technology/index.html">Why Choose Us</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@envert.ca">contact@envert.ca</a></li><li><a href="tel:+14503741402">+1 450 374 1402</a></li><li><a href="tel:+15143777787">+1 514 377 7787</a></li><li><a href="contact/index.html">Send a Message</a></li></ul></div>
   </div>
   <div class="footer-bottom">
-    <span>© 2024 Envert, Inc. — All Rights Reserved · Pavillon J.-A. Bombardier, 5155 Ave Decelles, Montréal QC H3T 2B1</span>
-    <div class="footer-badges">
-      <span class="footer-badge">CCC Technology</span>
-      <span class="footer-badge">North America #1</span>
-    </div>
+    <span>© 2024 Envert, Inc. — All Rights Reserved · 5155 Ave Decelles, Montréal QC H3T 2B1</span>
+    <div class="footer-badges"><span class="footer-badge">CCC Technology</span><span class="footer-badge">North America #1</span></div>
   </div>
 </footer>
-
 <script src="assets/main.js"></script>
 </body>
 </html>
